@@ -26,8 +26,12 @@ body {
 .full-width {
   width: 100%; }
 
+.offers h1 {
+  padding: 40px 0; }
+
 .offers .fas {
-  font-size: 300%; }
+  font-size: 300%;
+  padding: 14% 0 0 0; }
 
 .offers p {
   padding: 14% 0;
