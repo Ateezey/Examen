@@ -83,4 +83,7 @@ body {
   z-index: -5; }
 
 .single-text-box {
-  padding: 5% 0; }
+  padding: 5% 10%; }
+  @media (min-width: 768px) {
+    .single-text-box {
+      padding: 5% 0%; } }
