@@ -55,3 +55,15 @@ body{
 .nopadding{
 	padding:0!important;
 }
+.location{
+	display:flex;
+	@media (min-width: 768px) {
+		.img{
+			order:1;
+		}
+		.text-box{
+			order:2;
+		}
+	}
+
+}

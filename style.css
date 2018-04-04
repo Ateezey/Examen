@@ -53,3 +53,17 @@ body {
 
 .nopadding {
   padding: 0 !important; }
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    .location .img {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .location .text-box {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
