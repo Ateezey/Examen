@@ -15,3 +15,13 @@ body {
 
 .logo {
   font-size: 2rem; }
+
+.orange {
+  background: #fa6400; }
+
+.black {
+  background: #231f20;
+  color: white; }
+
+.fas {
+  font-size: 300%; }
