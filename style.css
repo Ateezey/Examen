@@ -26,9 +26,147 @@ body {
 .full-width {
   width: 100%; }
 
+.offers h1 {
+  padding: 40px 0; }
+
 .offers .fas {
-  font-size: 300%; }
+  font-size: 300%;
+  padding: 14% 0 0 0; }
 
 .offers p {
   padding: 14% 0;
   font-weight: bold; }
+
+.text-box {
+  padding: 110px 10%; }
+
+.img-box {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-height: 240px;
+  margin: 0px !important;
+  background-position: 50%;
+  background-size: cover; }
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.nopadding {
+  padding: 0 !important; }
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    .location .img {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .location .text-box {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
+
+.js-fadein {
+  opacity: 0; }
+
+.banner {
+  background: url("http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg");
+  height: 86vh;
+  margin-top: -5vh;
+  background-position: center;
+  z-index: -5; }
+  .banner .hero {
+    text-align: center;
+    position: absolute;
+    color: white; }
+    .banner .hero-text {
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -40%);
+      -ms-transform: translate(-50%, -40%);
+      transform: translate(-50%, -40%); }
+    .banner .hero-date {
+      bottom: 35%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -35%);
+      -ms-transform: translate(-50%, -35%);
+      transform: translate(-50%, -35%); }
+      @media (min-width: 768px) {
+        .banner .hero-date {
+          bottom: 20%;
+          left: 10%;
+          -webkit-transform: translate(-10%, -20%);
+          -ms-transform: translate(-10%, -20%);
+          transform: translate(-10%, -20%); } }
+    .banner .hero-location {
+      bottom: 25%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+      transform: translate(-50%, -25%); }
+      @media (min-width: 768px) {
+        .banner .hero-location {
+          bottom: 20%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -20%);
+          -ms-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%); } }
+    .banner .hero-logo {
+      bottom: 15%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -15%);
+      -ms-transform: translate(-50%, -15%);
+      transform: translate(-50%, -15%); }
+      @media (min-width: 768px) {
+        .banner .hero-logo {
+          bottom: 20%;
+          left: 90%;
+          -webkit-transform: translate(-90%, -20%);
+          -ms-transform: translate(-90%, -20%);
+          transform: translate(-90%, -20%); } }
+
+.single-text-box {
+  padding: 5% 10%; }
+  @media (min-width: 768px) {
+    .single-text-box {
+      padding: 5% 0%; } }
+
+form {
+  padding: 0 30px; }
+  form input {
+    width: 100%;
+    padding: 8px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black; }
+    form input:focus {
+      outline: none; }
+  form button {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    form button:hover {
+      background: #fa6400;
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px); }
+
+footer i {
+  font-size: 140%;
+  padding: 10px 5px; }

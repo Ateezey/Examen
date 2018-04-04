@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
 
 
@@ -23,16 +25,26 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            IMAGE HERE
+        <div class="row banner">
+          <div class=" hero hero-text">
+            <h1>Dont miss it</h1>
           </div>
+          <div class="hero hero-date">
+            <h1>25 Maj</h1>
+          </div>
+          <div class="hero hero-location">
+            <h1>Stockholm</h1>
+          </div>
+          <div class="hero hero-logo">
+            <h1>Google</h1>
+          </div>
+        </div>
         </div>
       </div>
     </header>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 single-text-box">
           <h1 class="text-center" >Header</h1>
           <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.
             Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd
@@ -47,29 +59,46 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div class="row text-center equal-height">
-        <div class="col-lg-6 orange">
-          <h1>Rich text</h1>
+      <div class="row equal-height">
+        <div class="col-md-6 orange text-box">
+            <h1 class="text-center" >Header</h1>
+            <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.
+              Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd
+              boksättare tog att antal bokstäver och blandade dem för att göra
+              ett provexemplar av en bok. Lorem ipsum har inte bara överlevt
+              
+              </p>
         </div>
-        <div class="col-lg-6">
-          <h1>Img</h1>
+        <div class="col-md-6 nopadding">
+          <div class="img-box">
+            <img src="https://www.bizbash.com/content/editorial/storyimg/big/15016498830_a61d68cd68_k.jpg">
+            </div>
         </div>
       </div>
     </div>
     <div class="container-fluid">
-        <div class="row text-center equal-height">
-          <div class="col-lg-6">
-            <h1>Img</h1>
+        <div class="row equal-height location">
+            <div class="col-md-6 text-box">
+                <h1 class="text-center" >Header</h1>
+                <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin.
+                  Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd
+                  boksättare tog att antal bokstäver och blandade dem för att göra
+                  ett provexemplar av en bok. Lorem ipsum har inte bara överlevt
+                 
+                  </p>
+            </div>
+          <div class="col-md-6 img nopadding">
+            <div class="img-box">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kistam%C3%A4ssan_okt_2014.jpg/1200px-Kistam%C3%A4ssan_okt_2014.jpg">
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h1>Rich text</h1>
-          </div>
+          
         </div>
       </div>
       <div class="full-width orange">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-6 single-text-box text-center">
               <p>Rich text</p>
             </div>
           </div>
@@ -82,52 +111,66 @@
           </div>
         </div>
         <div class="row text-center">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 js-fadein">
               <i class="fas fa-glass-martini"></i>
               <p>Öppen bar</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 js-fadein">
               <i class="fas fa-utensils"></i>
               <p>Mat av högsta kvalité</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 js-fadein">
               <i class="fas fa-lightbulb"></i>
               <p>Inspiration</p>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-6 js-fadein">
               <i class="fas fa-gift"></i>
               <p>Goody bag</p>
             </div> 
         </div>
       </div>
-      <div class="container speakers">
+      <!--<div class="container speakers">
         <div class="row justify-content-center">
           <div class="col-6 text-center">
             <h1>Gäster</h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row" >
           <div class="col-lg-3 col-6"></div>
           <div class="col-lg-3 col-6"></div>
           <div class="col-lg-3 col-6"></div>
           <div class="col-lg-3 col-6"></div>
         </div>
+      </div>-->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 single-text-box">
+            <h1 class="text-center">Registrera</h1>
+            <form action="insert.php" method="POST">
+              <input type="text" placeholder="Namn" name="name">
+              <input type="text" placeholder="Efternamn" name="lastname">
+              <input type="email" placeholder="Email" name="email">
+              <button type="submit">Anmäl nu!</button>
+            </form>
+          </div>
+        </div>
       </div>
-        <form action="index.php" method="post">
-         <input type="text" name="namn">
-         <input type="text" name="efternamn">
-         <input type="text" name="email">
-          <input type="submit">
-        </form>
-      
+      <footer class="full-width black">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-4">Logo</div>
+            <div class="col-lg-4">Copy</div>
+            <div class="col-lg-4">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-google-plus-g"></i>
 
 
+            </div>
+          </div>
+        </div>
+      </footer>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     
   </body>
 </html>
