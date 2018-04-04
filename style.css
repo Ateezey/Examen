@@ -4,3 +4,11 @@ body {
 
 .text-center {
   text-align: center; }
+
+.equal-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
