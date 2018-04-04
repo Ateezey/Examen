@@ -21,6 +21,16 @@ body{
 	background:#231f20;
 	color:white;
 }
-.fas{
-	font-size:300%;
+
+.full-width{
+	width:100%;
+}
+.offers{
+	.fas{
+		font-size:300%;
+	}
+	p{
+		padding:14% 0;
+		font-weight:bold;
+	}
 }

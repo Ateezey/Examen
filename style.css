@@ -23,5 +23,12 @@ body {
   background: #231f20;
   color: white; }
 
-.fas {
+.full-width {
+  width: 100%; }
+
+.offers .fas {
   font-size: 300%; }
+
+.offers p {
+  padding: 14% 0;
+  font-weight: bold; }
