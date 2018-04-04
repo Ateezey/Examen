@@ -34,3 +34,24 @@ body{
 		font-weight:bold;
 	}
 }
+.text-box{
+	padding:110px 10%;
+}
+.img-box{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	min-height: 240px;
+	margin: 0px !important;
+	background-position: 50%;
+	background-size: cover;
+	img{
+		width:100%;
+		height:100%;
+		position:absolute;
+		object-fit:cover;
+	}
+}
+.nopadding{
+	padding:0!important;
+}
