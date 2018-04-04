@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 
-if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) || !empty($phoneCode) || !empty($phone)) {
+if (!empty($name) || !empty($lastname) || !empty($email)) {
     $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
@@ -16,7 +16,7 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
         die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
     } else {
         $SELECT = "SELECT email From register Where email = ? Limit 1";
-        $INSERT = "INSERT Into register (username, password, gender, email, phoneCode, phone) values(?, ?, ?, ?, ?, ?)";
+        $INSERT = "INSERT Into register (name, lastname, email) values(?, ?, ?)";
 
         //prepare statement 
         $stmt = $conn->prepare($SELECT);
@@ -30,7 +30,7 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
             $stmt->close();
 
             $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("ssssii", $username, $password, $gender, $email, $phoneCode, $phone);
+            $stmt->bind_param("sss", $name, $lastname, $email);
             $stmt->execute();
             echo "New record inserted successfully";
         } else {
