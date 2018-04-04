@@ -87,3 +87,20 @@ body {
   @media (min-width: 768px) {
     .single-text-box {
       padding: 5% 0%; } }
+
+form {
+  margin-bottom: 30vh; }
+  form input {
+    width: 100%;
+    padding: 8px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black; }
+    form input:focus {
+      outline: none; }
+  form button {
+    width: 100%;
+    padding: 8px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
