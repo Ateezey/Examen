@@ -79,6 +79,30 @@ body{
 	margin-top:-5vh;
 	background-position: center; 
 	z-index:-5;
+	.hero{
+		text-align: center;
+		position: absolute;
+		color: white;
+		&-text{
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+		}
+		&-date{
+			bottom: 20%;
+			left: 10%;
+			transform: translate(-10%, -20%);
+		}
+		&-location{
+			bottom: 20%;
+			left: 50%;
+			transform: translate(-50%, -20%);
+		}
+		&-logo{
+			bottom: 20%;
+			right:10%;
+			transform: translate(10%, -20%);}
+	}	  
 }
 .single-text-box{
 	padding:5% 10%;
@@ -87,6 +111,7 @@ body{
 	}
 }
 form {
+	padding:0 30px;
 	margin-bottom:30vh;
 	input{
 		width:100%;
@@ -99,16 +124,19 @@ form {
 		}
 	}
 	button{
+		position:relative;
 		width:100%;
 		cursor:pointer;
 		padding:8px 0;
 		appearance: none;
+		background-color:white;
 		border:none;
 		margin-top:10px;
 		transition:0.2s;
 		&:hover{
 			background:#fa6400;
 			transform: translateY(-2px);
-		}
+			
+		}	
 	}
 } 
