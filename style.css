@@ -100,7 +100,18 @@ form {
       outline: none; }
   form button {
     width: 100%;
+    cursor: pointer;
     padding: 8px 0;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; }
+    appearance: none;
+    border: none;
+    margin-top: 10px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    form button:hover {
+      background: #fa6400;
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px); }
