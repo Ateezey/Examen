@@ -92,23 +92,44 @@ body {
       -ms-transform: translate(-50%, -40%);
       transform: translate(-50%, -40%); }
     .banner .hero-date {
-      bottom: 20%;
-      left: 10%;
-      -webkit-transform: translate(-10%, -20%);
-      -ms-transform: translate(-10%, -20%);
-      transform: translate(-10%, -20%); }
-    .banner .hero-location {
-      bottom: 20%;
+      bottom: 35%;
       left: 50%;
-      -webkit-transform: translate(-50%, -20%);
-      -ms-transform: translate(-50%, -20%);
-      transform: translate(-50%, -20%); }
+      -webkit-transform: translate(-50%, -35%);
+      -ms-transform: translate(-50%, -35%);
+      transform: translate(-50%, -35%); }
+      @media (min-width: 768px) {
+        .banner .hero-date {
+          bottom: 20%;
+          left: 10%;
+          -webkit-transform: translate(-10%, -20%);
+          -ms-transform: translate(-10%, -20%);
+          transform: translate(-10%, -20%); } }
+    .banner .hero-location {
+      bottom: 25%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+      transform: translate(-50%, -25%); }
+      @media (min-width: 768px) {
+        .banner .hero-location {
+          bottom: 20%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -20%);
+          -ms-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%); } }
     .banner .hero-logo {
-      bottom: 20%;
-      right: 10%;
-      -webkit-transform: translate(10%, -20%);
-      -ms-transform: translate(10%, -20%);
-      transform: translate(10%, -20%); }
+      bottom: 15%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -15%);
+      -ms-transform: translate(-50%, -15%);
+      transform: translate(-50%, -15%); }
+      @media (min-width: 768px) {
+        .banner .hero-logo {
+          bottom: 20%;
+          left: 90%;
+          -webkit-transform: translate(-90%, -20%);
+          -ms-transform: translate(-90%, -20%);
+          transform: translate(-90%, -20%); } }
 
 .single-text-box {
   padding: 5% 10%; }

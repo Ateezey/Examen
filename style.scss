@@ -89,19 +89,35 @@ body{
 			transform: translate(-50%, -40%);
 		}
 		&-date{
-			bottom: 20%;
-			left: 10%;
-			transform: translate(-10%, -20%);
+			bottom: 35%;
+			left: 50%;
+			transform: translate(-50%, -35%);
+			@media (min-width: 768px) {
+				bottom: 20%;
+				left: 10%;
+				transform: translate(-10%, -20%);
+			}
 		}
 		&-location{
-			bottom: 20%;
-			left: 50%;
-			transform: translate(-50%, -20%);
+			bottom:25%;
+			left:50%;
+			transform: translate(-50%, -25%);
+			@media (min-width: 768px) {
+				bottom: 20%;
+				left: 50%;
+				transform: translate(-50%, -20%);
+			}
 		}
 		&-logo{
+			bottom:15%;
+			left:50%;
+			transform: translate(-50%,-15%);
+			@media (min-width: 768px) {
 			bottom: 20%;
-			right:10%;
-			transform: translate(10%, -20%);}
+			left:90%;
+			transform: translate(-90%, -20%);
+			}
+		}
 	}	  
 }
 .single-text-box{
