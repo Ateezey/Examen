@@ -72,9 +72,11 @@ body {
       -ms-flex-order: 2;
       order: 2; } }
 
-.avatar img {
-  width: 100%;
-  height: auto; }
+.avatar {
+  text-align: center; }
+  .avatar img {
+    width: 100%;
+    height: auto; }
 
 .js-fadein {
   opacity: 0; }
