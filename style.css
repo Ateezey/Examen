@@ -77,26 +77,32 @@ body {
 
 .banner {
   background: url("http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg");
-  height: 86vh;
-  margin-top: -5vh;
+  height: 100vh;
   background-position: center;
   z-index: -5; }
+  .banner h1 {
+    font-size: 2rem; }
+  @media (min-width: 768px) {
+    .banner h1 {
+      font-size: 2.5rem; } }
   .banner .hero {
     text-align: center;
     position: absolute;
     color: white; }
     .banner .hero-text {
-      top: 35%;
+      top: 45%;
       left: 50%;
-      -webkit-transform: translate(-50%, -35%);
-      -ms-transform: translate(-50%, -35%);
-      transform: translate(-50%, -35%); }
+      -webkit-transform: translate(-50%, -45%);
+      -ms-transform: translate(-50%, -45%);
+      transform: translate(-50%, -45%); }
+      .banner .hero-text h1 {
+        margin-bottom: 2rem; }
     .banner .hero-date {
-      bottom: 35%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -35%);
-      -ms-transform: translate(-50%, -35%);
-      transform: translate(-50%, -35%); }
+      bottom: 10%;
+      left: 10%;
+      -webkit-transform: translate(-10%, -10%);
+      -ms-transform: translate(-10%, -10%);
+      transform: translate(-10%, -10%); }
       @media (min-width: 768px) {
         .banner .hero-date {
           bottom: 20%;
@@ -105,11 +111,11 @@ body {
           -ms-transform: translate(-10%, -20%);
           transform: translate(-10%, -20%); } }
     .banner .hero-location {
-      bottom: 25%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -25%);
-      -ms-transform: translate(-50%, -25%);
-      transform: translate(-50%, -25%); }
+      bottom: 10%;
+      left: 90%;
+      -webkit-transform: translate(-90%, -10%);
+      -ms-transform: translate(-90%, -10%);
+      transform: translate(-90%, -10%); }
       @media (min-width: 768px) {
         .banner .hero-location {
           bottom: 20%;
@@ -118,11 +124,11 @@ body {
           -ms-transform: translate(-50%, -20%);
           transform: translate(-50%, -20%); } }
     .banner .hero-logo {
-      bottom: 15%;
+      bottom: 2%;
       left: 50%;
-      -webkit-transform: translate(-50%, -15%);
-      -ms-transform: translate(-50%, -15%);
-      transform: translate(-50%, -15%); }
+      -webkit-transform: translate(-50%, -2%);
+      -ms-transform: translate(-50%, -2%);
+      transform: translate(-50%, -2%); }
       @media (min-width: 768px) {
         .banner .hero-logo {
           bottom: 20%;
@@ -130,6 +136,11 @@ body {
           -webkit-transform: translate(-90%, -20%);
           -ms-transform: translate(-90%, -20%);
           transform: translate(-90%, -20%); } }
+  .banner .button-register {
+    color: black;
+    background: white;
+    border: 0;
+    padding: 12px 50px; }
 
 .single-text-box {
   padding: 5% 10%; }
