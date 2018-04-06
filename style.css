@@ -72,7 +72,7 @@ body {
       -ms-flex-order: 2;
       order: 2; } }
 
-.avatar {
+.avatar img {
   width: 100%;
   height: auto; }
 

@@ -72,8 +72,10 @@ body{
 }
 
 .avatar{
-	width:100%;
-	height:auto;
+	img{
+		width:100%;
+		height:auto;
+	}
 }
 
 .js-fadein{
