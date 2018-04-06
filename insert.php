@@ -32,15 +32,15 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
             $stmt = $conn->prepare($INSERT);
             $stmt->bind_param("sss", $name, $lastname, $email);
             $stmt->execute();
-            echo "New record inserted successfully";
+            echo "Grattis! Du har nu registrerat dig";
         } else {
-            echo "Someone is already using this email.";
+            echo "Någon använder redan den här mail adressen.";
         }
         $stmt->close();
         $conn->close();
     }
 } else{
-    echo "All fields are required";
+    echo "Alla fällt måste fyllas i.";
     die();
 }
 
