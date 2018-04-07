@@ -187,7 +187,7 @@ body {
       padding: 5% 0%; } }
 
 form {
-  padding: 0 30px; }
+  padding: 0 50px; }
   form input {
     width: 100%;
     padding: 8px 0;
@@ -202,6 +202,8 @@ form {
   form button {
     position: relative;
     width: 100%;
+    color: white;
+    text-transform: uppercase;
     cursor: pointer;
     padding: 12px 0;
     background: #fa6400;
@@ -211,10 +213,7 @@ form {
     -o-transition: 0.2s;
     transition: 0.2s; }
     form button:hover {
-      background: #fa6400;
-      -webkit-transform: scale(1.01);
-      -ms-transform: scale(1.01);
-      transform: scale(1.01); }
+      background: #e65c00; }
 
 footer i {
   font-size: 140%;

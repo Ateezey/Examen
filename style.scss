@@ -182,7 +182,7 @@ body{
 	}
 }
 form {
-	padding:0 30px;
+	padding:0 50px;
 	input{
 		width:100%;
 		padding:8px 0;
@@ -197,6 +197,8 @@ form {
 	button{
 		position:relative;
 		width:100%;
+		color:white;
+		text-transform:uppercase;
 		cursor:pointer;
 		padding:12px 0;
 		background:#fa6400;
@@ -204,9 +206,7 @@ form {
 		margin-top:10px;
 		transition:0.2s;
 		&:hover{
-			background:#fa6400;
-			transform: scale(1.01);
-			
+			background:#e65c00;
 		}	
 	}
 } 
