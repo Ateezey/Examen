@@ -25,10 +25,11 @@ body{
 .full-width{
 	width:100%;
 }
+.header-space{
+	padding:40px 0;
+}
 .offers{
-	h1{
-		padding:40px 0;
-	}
+
 	.fas{
 		font-size:300%;
 		padding:14% 0 0 0 ;
@@ -76,9 +77,38 @@ body{
 	img{
 		width:100%;
 		height:auto;
+		filter: grayscale(100%);
+		transition:0.25s;
+		&:hover{
+			filter: grayscale(0%);
+		}
+	}	
+}
+.sub-banner{
+	background:url('http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg');
+	height:60vh;
+	background-position: center; 
+	z-index:-5;
+}
+.darkgray{
+	background:#363031;
+	color:white;
+}
+.brands{
+	img{
+		width:15%;
+		padding:6px 12px;
+		margin:0 2px;
+		height:auto;
+		filter: grayscale(100%);
+		&:hover{
+			filter: grayscale(0%);
+		}
 	}
 }
-
+.footer-section{
+	padding:7% 0;
+}
 .js-fadein{
 	opacity:0;
 }
@@ -159,6 +189,7 @@ form {
 		margin:10px 0;
 		border:none;
 		border-bottom:1px solid black;
+		transition:0.25s;
 		&:focus{
 			outline:none;
 		}
@@ -168,14 +199,13 @@ form {
 		width:100%;
 		cursor:pointer;
 		padding:12px 0;
-		appearance: none;
-		background-color:white;
+		background:#fa6400;
 		border:none;
 		margin-top:10px;
 		transition:0.2s;
 		&:hover{
 			background:#fa6400;
-			transform: translateY(-2px);
+			transform: scale(1.05);
 			
 		}	
 	}

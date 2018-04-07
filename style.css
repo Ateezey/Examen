@@ -26,7 +26,7 @@ body {
 .full-width {
   width: 100%; }
 
-.offers h1 {
+.header-space {
   padding: 40px 0; }
 
 .offers .fas {
@@ -76,7 +76,39 @@ body {
   text-align: center; }
   .avatar img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
+    .avatar img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
+
+.sub-banner {
+  background: url("http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg");
+  height: 60vh;
+  background-position: center;
+  z-index: -5; }
+
+.darkgray {
+  background: #363031;
+  color: white; }
+
+.brands img {
+  width: 15%;
+  padding: 6px 12px;
+  margin: 0 2px;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .brands img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+
+.footer-section {
+  padding: 7% 0; }
 
 .js-fadein {
   opacity: 0; }
@@ -161,7 +193,10 @@ form {
     padding: 8px 0;
     margin: 10px 0;
     border: none;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s; }
     form input:focus {
       outline: none; }
   form button {
@@ -169,10 +204,7 @@ form {
     width: 100%;
     cursor: pointer;
     padding: 12px 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: white;
+    background: #fa6400;
     border: none;
     margin-top: 10px;
     -webkit-transition: 0.2s;
@@ -180,9 +212,9 @@ form {
     transition: 0.2s; }
     form button:hover {
       background: #fa6400;
-      -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-      transform: translateY(-2px); }
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
 
 footer i {
   font-size: 140%;
