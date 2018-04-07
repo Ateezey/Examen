@@ -20,7 +20,7 @@ body {
   background: #fa6400; }
 
 .black {
-  background: #231f20;
+  background: #292425;
   color: white; }
 
 .full-width {
@@ -99,7 +99,7 @@ body {
 .brands img {
   width: 15%;
   padding: 6px 12px;
-  margin: 0 2px;
+  margin: 0 2px 20px 2px;
   height: auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
@@ -212,9 +212,9 @@ form {
     transition: 0.2s; }
     form button:hover {
       background: #fa6400;
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05); }
+      -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      transform: scale(1.01); }
 
 footer i {
   font-size: 140%;
