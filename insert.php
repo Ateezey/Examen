@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
 <?php
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];
@@ -34,7 +51,7 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
             $stmt->execute();
             echo "Grattis! Du har nu registrerat dig";
         } else {
-            echo "Någon använder redan den här mail adressen.";
+            echo "Någon använder redan den här mail adressen. Testa igen!";
         }
         $stmt->close();
         $conn->close();
@@ -45,3 +62,6 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
 }
 
 ?>
+
+</body>
+</html>
