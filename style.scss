@@ -21,7 +21,9 @@ body{
 	background:#292425;
 	color:white;
 }
-
+.fa-spin{
+	animation:a 5s infinite linear!important;
+}
 .full-width{
 	width:100%;
 }
@@ -85,8 +87,9 @@ body{
 	}	
 }
 .sub-banner{
-	background:url('http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg');
-	height:60vh;
+	background:url('https://images.unsplash.com/photo-1506377711776-dbdc2f3c20d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=896382c9f514b7af66733f2390f08eb0&auto=format&fit=crop&w=1350&q=80');
+	background-color:coral;
+	height:50vh;
 	background-position: center; 
 	z-index:-5;
 }
@@ -98,7 +101,7 @@ body{
 	img{
 		width:15%;
 		padding:6px 12px;
-		margin:0 2px 20px 2px;
+		margin:0 0 20px 0;
 		height:auto;
 		filter: grayscale(100%);
 		&:hover{
@@ -113,7 +116,8 @@ body{
 	opacity:0;
 }
 .banner{
-	background:url('http://hdimages.org/wp-content/uploads/2016/10/imgur-wallpaper9.jpg');
+	background:url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-color:coral;
 	height:100vh;
 	background-position: center; 
 	z-index:-5;
@@ -167,13 +171,6 @@ body{
 			}
 		}
 	}
-	.button-register{
-		color:black;
-		background:white;
-		border:0;
-		padding: 12px 50px;
-
-	}	  
 }
 .single-text-box{
 	padding:5% 10%;
@@ -182,7 +179,10 @@ body{
 	}
 }
 form {
-	padding:0 50px;
+	padding:0;
+	@media (min-width: 768px) {
+		padding:0 50px;
+	}
 	input{
 		width:100%;
 		padding:8px 0;
@@ -194,21 +194,7 @@ form {
 			outline:none;
 		}
 	}
-	button{
-		position:relative;
-		width:100%;
-		color:white;
-		text-transform:uppercase;
-		cursor:pointer;
-		padding:12px 0;
-		background:#fa6400;
-		border:none;
-		margin-top:10px;
-		transition:0.2s;
-		&:hover{
-			background:#e65c00;
-		}	
-	}
+
 } 
 footer{
 	i{
@@ -216,3 +202,39 @@ footer{
 		padding:10px 5px;
 	}
 }
+.cta, .cta::after {
+	transition: all 0.6s;
+}
+.cta {
+  background: none;
+  width:100%;
+  cursor:pointer;
+  border: 2px solid coral;
+  color: coral;
+  display: block;
+  font-size:16px;
+  padding:12px 0;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  &::before, &::after{
+	background: coral;
+  	content: '';
+  	position: absolute;
+  	z-index: -1;
+  }
+  &:hover{
+	color: white;
+	text-decoration: none;
+  }
+  &::after{
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 0;
+  }
+  &:hover:after{
+	width: 100%;
+  }
+}
+
