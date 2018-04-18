@@ -115,7 +115,7 @@ body{
 	}
 }
 .footer-section{
-	padding:7% 0;
+	padding:3% 0;
 }
 .js-fadein{
 	opacity:0;
@@ -183,11 +183,11 @@ body{
 		padding:5% 0%;
 	}
 }
-form {
+#register-form {
 	padding:0;
 	position:relative;
 	@media (min-width: 768px) {
-		padding:0 50px;
+		padding:0 50px 35px;
 	}
 	input{
 		width:100%;

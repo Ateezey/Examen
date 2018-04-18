@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".test").load("contet.txt #p1");
+  $(".test").load("content.txt #test");
   smoothScroll();
   emailValidation();
 });
@@ -30,7 +30,6 @@ function smoothScroll() {// Function to smooth all anchors
 }
 function emailValidation() {//Function to check if email is a valid email. If not submit wont be possible
   $('#email').keyup(function () {
-    console.log('test');
     var checkValid = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
     if (checkValid.test(this.value)) {
       $('#register-form .valid').css('display', 'block');

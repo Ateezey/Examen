@@ -119,7 +119,7 @@ body {
     filter: grayscale(0%); }
 
 .footer-section {
-  padding: 7% 0; }
+  padding: 3% 0; }
 
 .js-fadein {
   opacity: 0; }
@@ -193,13 +193,13 @@ body {
     .single-text-box {
       padding: 5% 0%; } }
 
-form {
+#register-form {
   padding: 0;
   position: relative; }
   @media (min-width: 768px) {
-    form {
-      padding: 0 50px; } }
-  form input {
+    #register-form {
+      padding: 0 50px 35px; } }
+  #register-form input {
     width: 100%;
     padding: 8px 5px;
     margin: 10px 0;
@@ -208,9 +208,9 @@ form {
     -webkit-transition: 0.25s;
     -o-transition: 0.25s;
     transition: 0.25s; }
-    form input:focus {
+    #register-form input:focus {
       outline: none; }
-  form .valid {
+  #register-form .valid {
     position: absolute;
     font-size: 120%;
     color: green;
@@ -218,18 +218,18 @@ form {
     -o-transition: 0.5s;
     transition: 0.5s;
     display: none; }
-  form .hidden {
+  #register-form .hidden {
     opacity: 0; }
-  form .input-name-valid {
+  #register-form .input-name-valid {
     right: 55px;
     top: 25px; }
-  form .input-lastname-valid {
+  #register-form .input-lastname-valid {
     right: 55px;
     top: 87px; }
-  form .input-email-valid {
+  #register-form .input-email-valid {
     right: 55px;
     top: 148px; }
-  form .register-button--js {
+  #register-form .register-button--js {
     width: 100%;
     display: block;
     cursor: pointer;
@@ -245,12 +245,12 @@ form {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s; }
-    form .register-button--js:disabled {
+    #register-form .register-button--js:disabled {
       background: white;
       opacity: 0.4; }
-    form .register-button--js:hover:disabled {
+    #register-form .register-button--js:hover:disabled {
       cursor: not-allowed; }
-    form .register-button--js:hover:enabled {
+    #register-form .register-button--js:hover:enabled {
       background: #f05f40;
       color: white; }
 
