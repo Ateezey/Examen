@@ -1,3 +1,5 @@
+$orange: #f05f40;
+$darkgray: #292425;
 body{
 	font-size:16px;
 	font-family: 'Montserrat', sans-serif;
@@ -15,10 +17,10 @@ body{
 }
 
 .orange{
-	background:#fa6400;
+	background:$orange;
 }
 .black{
-	background:#292425;
+	background:$darkgray;
 	color:white;
 }
 .fa-spin{
@@ -48,7 +50,7 @@ body{
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
-	min-height: 240px;
+	min-height: 350px;
 	margin: 0px !important;
 	background-position: 50%;
 	background-size: cover;
@@ -73,7 +75,9 @@ body{
 		}
 	}
 }
-
+.avatars{
+	padding-bottom:8%;
+}
 .avatar{
 	text-align:center; 
 	img{
@@ -88,10 +92,11 @@ body{
 }
 .sub-banner{
 	background:url('https://images.unsplash.com/photo-1506377711776-dbdc2f3c20d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=896382c9f514b7af66733f2390f08eb0&auto=format&fit=crop&w=1350&q=80');
-	background-color:coral;
-	height:50vh;
+	background-color:$orange;
+	height:60vh;
 	background-position: center; 
 	z-index:-5;
+	color:white;
 }
 .darkgray{
 	background:#363031;
@@ -104,20 +109,21 @@ body{
 		margin:0 0 20px 0;
 		height:auto;
 		filter: grayscale(100%);
+		transition:0.25s;
 		&:hover{
 			filter: grayscale(0%);
 		}
 	}
 }
 .footer-section{
-	padding:7% 0;
+	padding:3% 0;
 }
 .js-fadein{
 	opacity:0;
 }
 .banner{
-	background:url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-	background-color:coral;
+	/*background:url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
+	background-color:black;
 	height:100vh;
 	background-position: center; 
 	z-index:-5;
@@ -137,37 +143,23 @@ body{
 			transform: translate(-50%, -45%);
 			h1{
 				margin-bottom:2rem;
+				font-size:3vw;
 				
 			}
 		}
-		&-date{
+		&-buttons{
+			a{
+				width:45%;
+				display:inline-block;
+			}
+			width:50%;
 			bottom: 10%;
-			left: 10%;
-			transform: translate(-10%, -10%);
+			left: 50%;
+			transform: translate(-50%, -10%);
 			@media (min-width: 768px) {
-				bottom: 20%;
-				left: 10%;
-				transform: translate(-10%, -20%);
-			}
-		}
-		&-location{
-			bottom:10%;
-			left:90%;
-			transform: translate(-90%, -10%);
-			@media (min-width: 768px) {
-				bottom:20%;
+				bottom: 40%;
 				left: 50%;
-				transform: translate(-50%, -20%);
-			}
-		}
-		&-logo{
-			bottom:2%;
-			left:50%;
-			transform: translate(-50%,-2%);
-			@media (min-width: 768px) {
-			bottom: 20%;
-			left:90%;
-			transform: translate(-90%, -20%);
+				transform: translate(-50%, -40%);
 			}
 		}
 	}
@@ -178,14 +170,15 @@ body{
 		padding:5% 0%;
 	}
 }
-form {
+#register-form {
 	padding:0;
+	position:relative;
 	@media (min-width: 768px) {
-		padding:0 50px;
+		padding:0 50px 35px;
 	}
 	input{
 		width:100%;
-		padding:8px 0;
+		padding:8px 5px;
 		margin:10px 0;
 		border:none;
 		border-bottom:1px solid black;
@@ -193,6 +186,57 @@ form {
 		&:focus{
 			outline:none;
 		}
+	}
+	.valid{
+		position:absolute;
+		font-size:120%;
+		color:green;
+		transition:0.5s;
+		display:none;
+	}
+	.hidden{
+		opacity:0;
+	}
+	.input{
+		&-name-valid{
+			right:55px;
+			top:25px;	
+		}
+		&-lastname-valid{
+			right:55px;
+			top:87px;
+		}
+		&-email-valid{
+			right:55px;
+			top:148px;
+		}
+	}
+
+	.register-button--js{
+		width:100%;
+		display: block;
+		cursor:pointer;
+		background:white;
+  		font-size:16px;
+  		padding:12px 0;
+ 		font-weight: bold;
+  		position: relative;
+		text-transform: uppercase;
+		border: 2px solid $orange;
+		color: $orange;
+		opacity:1;
+		transition:0.4s;
+		  &:disabled{
+			background:white;
+			opacity:0.4;
+		  }
+		  &:hover:disabled{
+			  cursor:not-allowed;
+		  }
+		  &:hover:enabled{
+			  background:$orange;
+			  color:white;
+		  }
 	}
 
 } 
@@ -209,8 +253,8 @@ footer{
   background: none;
   width:100%;
   cursor:pointer;
-  border: 2px solid coral;
-  color: coral;
+  border: 2px solid $orange;
+  color: $orange;
   display: block;
   font-size:16px;
   padding:12px 0;
@@ -218,7 +262,7 @@ footer{
   position: relative;
   text-transform: uppercase;
   &::before, &::after{
-	background: coral;
+	background: $orange;
   	content: '';
   	position: absolute;
   	z-index: -1;
@@ -238,3 +282,29 @@ footer{
   }
 }
 
+.big-icon{
+	font-size:250%;
+}
+.content-break{
+	height:100px;
+	i{
+		padding:5%;
+	}
+}
+.icon-wrap{
+	display: inline-block;
+	width: 48px;
+	cursor:pointer;
+    height: 48px;
+	line-height: 48px;
+	padding-top:4px;
+	background:$darkgray;
+	border:1px solid $orange;
+	color:$orange;
+	transition:0.25s;
+	&:hover{
+		background:$orange;
+		color:$darkgray;
+	}
+
+}
