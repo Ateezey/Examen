@@ -298,3 +298,10 @@ footer i {
   .icon-wrap:hover {
     background: #f05f40;
     color: #292425; }
+
+.open1, .open2, .open3, .open4 {
+  outline: solid red;
+  display: none; }
+
+.show {
+  display: block; }

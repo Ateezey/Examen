@@ -2,6 +2,7 @@ $(document).ready(function () {
   $(".test").load("content.txt #test");
   smoothScroll();
   emailValidation();
+  clickme();
 });
 $(window).scroll(function () {
   $('.js-fadein').each(function (i) {
@@ -46,4 +47,31 @@ function emailValidation() {//Function to check if email is a valid email. If no
     }
 
   });
+}
+
+function clickme(){
+$('.panel1').click(function(){
+  $('.open1').addClass('show');
+  $('.open2').removeClass('show');
+  $('.open3').removeClass('show');
+  $('.open4').removeClass('show');
+})
+$('.panel2').click(function(){
+  $('.open2').addClass('show');
+  $('.open1').removeClass('show');
+  $('.open3').removeClass('show');
+  $('.open4').removeClass('show');
+})
+$('.panel3').click(function(){
+  $('.open3').addClass('show');
+  $('.open1').removeClass('show');
+  $('.open2').removeClass('show');
+  $('.open4').removeClass('show');
+})
+$('.panel4').click(function(){
+  $('.open4').addClass('show');
+  $('.open1').removeClass('show');
+  $('.open2').removeClass('show');
+  $('.open3').removeClass('show');
+})
 }

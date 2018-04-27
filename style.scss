@@ -310,4 +310,12 @@ body{
 			  color:$darkgray;
 			}
 		  
-		  }						
+		  }				
+.open1, .open2, .open3, .open4{
+  outline:solid red;
+  display:none;
+}
+
+.show{
+  display:block;
+}		
