@@ -97,6 +97,7 @@ body{
 	background-position: center; 
 	z-index:-5;
 	color:white;
+
   }
   .darkgray{
 	background:#363031;
@@ -126,6 +127,7 @@ body{
 	background-color:black;
 	height:100vh;
 	background-position: center; 
+	background-attachment: fixed;
 	z-index:-5;
 	h1{
 	  font-size:2rem;
@@ -144,8 +146,10 @@ body{
 		h1{
 		  margin-bottom:2rem;
 		  font-size:3vw;
-		  
-		}
+			}
+			p{
+				margin-top:-2rem;
+			}
 	  }
 	  &-buttons{
 		a{
@@ -210,7 +214,8 @@ body{
 		  right:55px;
 		  top:148px;
 		}
-	  }
+		}
+
 	  .register-button--js{
 		width:100%;
 		display: block;
@@ -231,14 +236,13 @@ body{
 		  }
 		  &:hover:disabled{
 			cursor:not-allowed;
-		  }
+			}
+		}
 		  &:hover:enabled{
 			background:$orange;
 			color:white;
 		  }
 	  }
-	
-	} 
 	footer{
 		i{
 		  font-size:140%;

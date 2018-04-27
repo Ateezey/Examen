@@ -130,6 +130,7 @@ body {
   background-color: black;
   height: 100vh;
   background-position: center;
+  background-attachment: fixed;
   z-index: -5; }
   .banner h1 {
     font-size: 2rem; }
@@ -149,6 +150,8 @@ body {
       .banner .hero-text h1 {
         margin-bottom: 2rem;
         font-size: 3vw; }
+      .banner .hero-text p {
+        margin-top: -2rem; }
     .banner .hero-buttons {
       width: 50%;
       bottom: 10%;
@@ -230,9 +233,9 @@ body {
       opacity: 0.4; }
     #register-form .register-button--js:hover:disabled {
       cursor: not-allowed; }
-    #register-form .register-button--js:hover:enabled {
-      background: #f05f40;
-      color: white; }
+  #register-form:hover:enabled {
+    background: #f05f40;
+    color: white; }
 
 footer i {
   font-size: 140%;

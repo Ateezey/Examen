@@ -25,7 +25,8 @@
     <div class="container-fluid">
       <div class="row banner">
         <div class=" hero hero-text">
-          <h1>Great ideas were meant to be shared</h1>
+          <h1>The Tech industry is growing</h1>
+          <p>(but can we keep up?)</p>
         </div>
         <div class="hero hero-buttons">
           <a class="button-register cta" id="scroll--js" href="#register">Anmäl nu!</a>
@@ -36,9 +37,9 @@
     </div>
   </header>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="read-more">
       <div class="col-lg-6 single-text-box test">
-        <h1 id="read-more"class="text-center">Header</h1>
+        <h1 class="text-center">Header</h1>
         <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet,
           när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem
           ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar.
@@ -173,13 +174,16 @@
       <div class="col-lg-6 single-text-box">
         <h1 id="register" class="text-center header-space">Registrera</h1>
         <form id="register-form" action="insert.php" method="POST">
-          <input type="text" placeholder="Namn" name="name">
+          <input class="test-form" type="text" placeholder="Namn" name="name">
           <i class="fas fa-check valid hidden input-name-valid"></i>
           <input type="text" placeholder="Efternamn" name="lastname">
           <i class="fas fa-check valid hidden input-lastname-valid"></i>
           <input type="email" id="email" placeholder="Email" name="email">
           <i class="fas fa-check valid hidden input-email-valid"></i>
+
           <button class="register-button--js" type="submit">Anmäl</button>
+
+         
         </form>
       </div>
     </div>
@@ -190,7 +194,8 @@
         <div class="col-lg-6 text-center">
           <h1 class=" header-space">Partners</h1>
           <p>Utan våra partners skulle inte "evenmang-namn" vara det de är idag. Vi är väldigt glada att få sammarbeta med dessa
-            företag.</p>
+            företag.
+          </p>
         </div>
       </div>
       <div class="row justify-content-center">
