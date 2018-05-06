@@ -1,9 +1,7 @@
-$(document).ready(function () {
   $(".test").load("content.txt #test");
   smoothScroll();
   emailValidation();
-  clickme();
-});
+
 $(window).scroll(function () {
   $('.js-fadein').each(function (i) {
     var bottom_of_object = $(this).position().top + $(this).outerHeight();
@@ -48,8 +46,20 @@ function emailValidation() {//Function to check if email is a valid email. If no
 
   });
 }
-
+$('.panel--js').hide();
+$('.panel1').show();
+$('.open-panel').click(function(){
+$('.panel--js').hide();
+$('.open-panel').removeClass('active')
+$('.panel'+$(this).attr('panel')).show();
+$(this).addClass('active');
+});
+/*
 function clickme(){
+$('.panel-menu').click(function(){
+  $(this).addClass('testo');
+})
+
 $('.panel1').click(function(){
   $('.open1').addClass('show');
   $('.open2').removeClass('show');
@@ -75,3 +85,4 @@ $('.panel4').click(function(){
   $('.open3').removeClass('show');
 })
 }
+*/

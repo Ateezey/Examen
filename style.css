@@ -299,9 +299,23 @@ footer i {
     background: #f05f40;
     color: #292425; }
 
-.open1, .open2, .open3, .open4 {
-  outline: solid red;
-  display: none; }
+.panel-menu {
+  padding: 5% 0; }
 
-.show {
-  display: block; }
+.open-panel {
+  text-align: center;
+  padding: 0 7%;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s; }
+  .open-panel .fas {
+    font-size: 225%; }
+  .open-panel:hover {
+    color: gold;
+    cursor: default; }
+
+.active {
+  color: gold;
+  cursor: default; }
+  .active .inner {
+    border-bottom: 2px solid; }
