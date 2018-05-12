@@ -1,6 +1,6 @@
-  $(".test").load("content.txt #test");
-  smoothScroll();
-  emailValidation();
+$(".test").load("content.txt #test");
+smoothScroll();
+emailValidation();
 
 $(window).scroll(function () {
   $('.js-fadein').each(function (i) {
@@ -49,10 +49,10 @@ function emailValidation() {//Function to check if email is a valid email. If no
 $('.panel--js').hide();
 $('.panel1').show();
 $('.open-panel').click(function(){
-$('.panel--js').hide();
-$('.open-panel').removeClass('active')
-$('.panel'+$(this).attr('panel')).show();
-$(this).addClass('active');
+  $('.panel--js').hide();
+  $('.open-panel').removeClass('active')
+  $('.panel'+$(this).attr('panel')).show();
+  $(this).addClass('active');
 });
 /*
 function clickme(){

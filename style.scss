@@ -1,4 +1,4 @@
-$orange: #f05f40;
+$orange: #ff4e50;
 $darkgray: #292425;
 body{
   font-size:16px;
@@ -17,7 +17,8 @@ body{
 }
 
 .orange{
-  background:$orange;
+	background:$orange;
+	background: linear-gradient(to right, #ff4e50, #f9d423);
 }
 .black{
   background:$darkgray;
@@ -177,6 +178,13 @@ body{
   #register-form {
 	padding:0;
 	position:relative;
+	p{
+		text-align:center;
+		font-weight:bold;
+		font-style:italic;
+		font-size:18px;
+		padding:30px 15px 0 15px;
+	}
 	@media (min-width: 768px) {
 	  padding:0 50px 35px;
 	}
@@ -317,18 +325,18 @@ body{
 }
 .open-panel{
 	text-align:center;
-	padding:0 7%;
+	padding:20px 7%;
 	transition:0.25s;
 	.fas{
 		font-size:225%;
 	}
 	&:hover{
-		color:gold;
+		color:$orange;
 		cursor:default;
 	}
 }
 .active{
-	color:gold;
+	color:$orange;
 	cursor:default;
 	.inner{
 		border-bottom:2px solid;
