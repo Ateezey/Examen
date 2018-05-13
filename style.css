@@ -52,7 +52,7 @@ body {
   overflow: hidden;
   height: 100%;
   width: 100%;
-  min-height: 350px;
+  min-height: 500px;
   margin: 0px !important;
   background-position: 50%;
   background-size: cover; }
@@ -70,11 +70,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .location ul li {
-    font-weight: bold;
-    list-style-type: none;
-    padding: 5px 0;
-    font-size: 20px; }
+  .location .text-box {
+    padding: 110px 24px; }
+  .location .location-info {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; }
+    .location .location-info:last-of-type {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 10%; }
+  .location .fas, .location .far {
+    font-size: 250%;
+    padding: 10% 0; }
   @media (min-width: 768px) {
     .location .img {
       -webkit-box-ordinal-group: 2;
@@ -105,10 +114,16 @@ body {
 .sub-banner {
   background: url("https://images.unsplash.com/photo-1506377711776-dbdc2f3c20d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=896382c9f514b7af66733f2390f08eb0&auto=format&fit=crop&w=1350&q=80");
   background-color: #ff4e50;
+  background-size: cover;
   height: 60vh;
   background-position: center;
   z-index: -5;
-  color: white; }
+  color: white;
+  display: block; }
+  .sub-banner h1 {
+    padding-left: 6%; }
+    .sub-banner h1:first-of-type {
+      padding-top: 2%; }
 
 .darkgray {
   background: #363031;
@@ -135,8 +150,9 @@ body {
   opacity: 0; }
 
 .banner {
-  /*background:url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
+  background: url("https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-color: black;
+  background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-attachment: fixed;
@@ -193,7 +209,10 @@ body {
     font-weight: bold;
     font-style: italic;
     font-size: 18px;
-    padding: 30px 15px 0 15px; }
+    padding: 16px 4px; }
+    @media (min-width: 768px) {
+      #register-form p {
+        padding: 30px 15px 0 15px; } }
   @media (min-width: 768px) {
     #register-form {
       padding: 0 50px 35px; } }
