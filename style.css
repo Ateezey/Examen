@@ -1,5 +1,5 @@
 body {
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Montserrat', sans-serif; }
 
 .text-center {
@@ -70,6 +70,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .location ul li {
+    font-weight: bold;
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 20px; }
   @media (min-width: 768px) {
     .location .img {
       -webkit-box-ordinal-group: 2;
