@@ -168,12 +168,12 @@ body{
 	  position: absolute;
 	  color: white;
 	  &-text{
-		top: 45%;
+		top: 40%;
 		left: 50%;
-		transform: translate(-50%, -45%);
+		transform: translate(-50%, -40%);
 		h1{
 		  margin-bottom:2rem;
-		  font-size:3vw;
+		  font-size:50px;
 			}
 			p{
 				margin-top:-2rem;
@@ -181,17 +181,21 @@ body{
 	  }
 	  &-buttons{
 		a{
-		  width:45%;
-		  display:inline-block;
+		  width:100%;
+			display:inline-block;
+			margin:2% 0;
+			@media (min-width: 768px) {
+				width:45%;
+			}
 		}
 		width:50%;
-		bottom: 10%;
+		bottom: 20%;
 		left: 50%;
-		transform: translate(-50%, -10%);
+		transform: translate(-50%, -20%);
 		@media (min-width: 768px) {
-		  bottom: 40%;
+		  bottom: 35	%;
 		  left: 50%;
-		  transform: translate(-50%, -40%);
+		  transform: translate(-50%, -35%);
 		}
 	  }
 	}
