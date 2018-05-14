@@ -65,7 +65,7 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
 
 <?php if ($rnum==0) : ?> 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
                 <div class="col-lg-6 text-center register-valid">
                     <i class="fas fa-check"></i>
@@ -76,12 +76,13 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
                     <p>Datum: 25/5/2018</p>   
                 </div>
         </div>
+
         <div class="row justify-content-center location-images">
-            <div class="col-lg-6">
-                <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t34.18173-12/30429664_1721697917913094_1200226215_n.jpg?_nc_cat=0&oh=ae5ca663bb8c7db524c8c3c8df78ff80&oe=5ADF6180">
+            <div class="col-lg-6 img-box nopadding">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kistam%C3%A4ssan_okt_2014.jpg/1200px-Kistam%C3%A4ssan_okt_2014.jpg">
             </div>
-            <div class="col-lg-6">
-                <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t34.18173-12/30421760_1721697984579754_1612452605_n.png?_nc_cat=0&oh=d73a5ad6bc3fc762159a173d91d480c9&oe=5ADF745C">
+            <div class="col-lg-6 img-box nopadding">
+                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0956178e44084db0e4a725c8b1e370e9&auto=format&fit=crop&w=1350&q=80">
             </div> 
                 <div class="col-lg-4 go-back-button">
                     <a href="index.html">
@@ -145,18 +146,25 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 single-text-box">
-            <h1 class="text-center header-space">Registrera</h1>
-            <form action="insert.php" method="POST">
-              <input type="text" placeholder="Namn" name="name">
-              <input type="text" placeholder="Efternamn" name="lastname">
-              <input type="email" placeholder="Email" name="email">
-              <button class="cta" type="submit">Anmäl</button>
-            </form>
-          </div>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 single-text-box">
+        <h1 id="register" class="text-center header-space">Registrera</h1>
+        <form id="register-form" action="insert.php" method="POST">
+          <input class="test-form" type="text" placeholder="Namn" name="name">
+          <i class="fas fa-check valid hidden input-name-valid"></i>
+          <input type="text" placeholder="Efternamn" name="lastname">
+          <i class="fas fa-check valid hidden input-lastname-valid"></i>
+          <input type="email" id="email" placeholder="Email" name="email">
+          <i class="fas fa-check valid hidden input-email-valid"></i>
+
+          <button class="register-button--js" type="submit">Anmäl</button>
+          <p>OBS! Till skillnad från andra så använder vi inte din information emot dig. Detta är enbart för statistik.
+          </p>
+
+        </form>
       </div>
+    </div>
+  </div>
 
      <div class="full-width darkgray">
         <div class="container">
