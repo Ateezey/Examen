@@ -48,6 +48,11 @@ body {
 .text-box {
   padding: 110px 10%; }
 
+.fa-glass-martini, .fa-utensils, .fa-lightbulb, .fa-gift {
+  border-radius: 50%;
+  background-color: grey;
+  padding: 20px; }
+
 .img-box {
   overflow: hidden;
   height: 100%;
