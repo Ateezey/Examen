@@ -49,9 +49,7 @@ body {
   padding: 110px 10%; }
 
 .fa-glass-martini, .fa-utensils, .fa-lightbulb, .fa-gift {
-  padding: 20px;
-  background-color: orange;
-  border-radius: 50%; }
+  padding: 20px; }
 
 .img-box {
   overflow: hidden;
@@ -328,8 +326,12 @@ footer i {
   padding: 5% 0; }
 
 .open-panel {
+  color: white;
+  background-color: #ff4e50;
+  border: 1px solid #ff4e50;
   text-align: center;
-  padding: 20px 3%;
+  padding: 0px 0%;
+  margin: 0 5px;
   display: inline-block;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
@@ -344,12 +346,12 @@ footer i {
     transform: translate(0, -7px); }
 
 .active {
-  color: white;
-  background-color: orange;
-  cursor: default; }
+  background-color: white;
+  color: #ff4e50; }
   .active .inner {
     border-bottom: 2px solid; }
 
 hr {
   border-top: 1px solid black;
-  margin: 0 25% 5% 25%; }
+  margin: 0 25%;
+  padding-bottom: 10%; }

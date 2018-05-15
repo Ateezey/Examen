@@ -50,8 +50,6 @@ body{
 
   .fa-glass-martini, .fa-utensils, .fa-lightbulb, .fa-gift{
   	padding:20px;
-  	background-color:orange;
-  	border-radius:50%;
   }
   .img-box{
 	overflow: hidden;
@@ -347,8 +345,12 @@ body{
 	padding:5% 0;
 }
 .open-panel{
+	color:white;
+	background-color: $orange;
+	border:1px solid $orange;
 	text-align:center;
-	padding:20px 3%;
+	padding: 0px 0%;
+	margin: 0 5px;
 	display:inline-block;
 	transition:0.25s;
 	border-radius:50%;
@@ -361,14 +363,14 @@ body{
 	}
 }
 .active{
-	color:white;
-	background-color:orange;
-	cursor:default;
+	background-color:white;	
+	color:$orange;
 	.inner{
 		border-bottom:2px solid;
 	}
 }
 hr{
 	border-top:1px solid black;
-	margin:0 25% 5% 25%;
+	margin:0 25%;
+	padding-bottom:10%;
 }
