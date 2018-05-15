@@ -347,7 +347,8 @@ footer i {
 
 .open-panel {
   text-align: center;
-  padding: 20px 7%;
+  padding: 20px 3%;
+  display: inline-block;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s; }
