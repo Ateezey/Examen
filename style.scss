@@ -71,38 +71,19 @@ body{
   .nopadding{
 	padding:0!important;
   }
-  .location{
-	display:flex;
-	.text-box{
-		padding:110px 24px;
-	}
-	
 
-	.location-info{
+	.location{
 		text-align:center;
-		font-size:20px;
-		font-weight:bold;
-		&:last-of-type{
-			color:blue;
-			text-decoration:underline;
-			cursor:pointer;
-			margin-top:10%;
+		padding:5% 0;
+		i{
+			font-size:300%;
+			padding:5% 0;
+		}
+		p{
+			font-size:18px;
+			font-weight:bold;
 		}
 	}
-		.fas, .far{
-			font-size:250%;
-			padding:10% 0;
-		}
-	
-	@media (min-width: 768px) {
-	  .img{
-		order:1;
-	  }
-	  .text-box{
-		order:2;
-	  }
-	}
-}
   .avatars{
 	padding-bottom:8%;
   }
