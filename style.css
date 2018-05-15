@@ -331,16 +331,19 @@ footer i {
   display: inline-block;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
-  transition: 0.25s; }
+  transition: 0.25s;
+  border-radius: 50%;
+  cursor: pointer; }
   .open-panel .fas {
-    font-size: 225%; }
+    font-size: 200%; }
   .open-panel:hover {
-    cursor: default; }
+    -webkit-transform: translate(0, -7px);
+    -ms-transform: translate(0, -7px);
+    transform: translate(0, -7px); }
 
 .active {
   color: white;
   background-color: orange;
-  border-radius: 50%;
   cursor: default; }
   .active .inner {
     border-bottom: 2px solid; }

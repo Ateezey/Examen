@@ -349,17 +349,18 @@ body{
 	padding:20px 3%;
 	display:inline-block;
 	transition:0.25s;
+	border-radius:50%;
+	cursor:pointer;
 	.fas{
-		font-size:225%;
+		font-size:200%;
 	}
 	&:hover{
-		cursor:default;
+	transform:translate(0, -7px);
 	}
 }
 .active{
 	color:white;
 	background-color:orange;
-	border-radius:50%;
 	cursor:default;
 	.inner{
 		border-bottom:2px solid;
