@@ -49,8 +49,6 @@ body {
   padding: 110px 10%; }
 
 .fa-glass-martini, .fa-utensils, .fa-lightbulb, .fa-gift {
-  border-radius: 50%;
-  background-color: grey;
   padding: 20px; }
 
 .img-box {
@@ -337,11 +335,12 @@ footer i {
   .open-panel .fas {
     font-size: 225%; }
   .open-panel:hover {
-    color: #ff4e50;
     cursor: default; }
 
 .active {
-  color: #ff4e50;
+  color: white;
+  background-color: orange;
+  border-radius: 50%;
   cursor: default; }
   .active .inner {
     border-bottom: 2px solid; }
