@@ -21,7 +21,7 @@ function smoothScroll() {// Function to smooth all anchors
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function () {
+      }, 550, function () {
         window.location.hash = hash;
       });
     }
@@ -51,7 +51,7 @@ $('.panel1').show();
 $('.open-panel').click(function(){
   $('.panel--js').hide();
   $('.open-panel').removeClass('active')
-  $('.panel'+$(this).attr('panel')).show();
+  $('.panel'+$(this).attr('panel')).fadeIn();
   $(this).addClass('active');
 });
 /*

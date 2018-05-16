@@ -50,12 +50,31 @@ body{
 
   .img-box{
 	overflow: hidden;
+	position:relative;
 	height: 100%;
 	width: 100%;
 	min-height: 400px;
+	padding-top:10px;
 	margin: 0px !important;
 	background-position: 50%;
 	background-size: cover;
+	.img-box-header{
+		position:absolute;
+		z-index:5;
+		color:white;
+		top:10px;
+		left: 50%;
+		transform: translateX(-50%);
+		&:nth-of-type(1){
+			top:unset;
+			bottom:20px;
+		}
+		h2, h3{
+			text-align:center;
+			font-weight:bold;
+
+		}
+	}
 	img{
 	  width:100%;
 	  height:100%;
