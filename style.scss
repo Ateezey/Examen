@@ -53,21 +53,21 @@ body{
 		.img-box-header{
 		position:absolute;
 		z-index:5;
-		color:white;
-		top:10px;
+		color:black;
+		bottom:20px;
 		left: 50%;
 		transform: translateX(-50%);
-		&:nth-child(1){
-			top:unset;
-			bottom:20px;
 		}
 		h2, h3{
 			text-align:center;
 			font-weight:bold;
 
 		}
+		.center{
+			bottom:120px;
+		}
 	}
-}
+
   .img-box{
 	overflow: hidden;
 	position:relative;
@@ -163,56 +163,23 @@ body{
 	opacity:0;
   }
   .banner{
-	background:url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background:url('https://images.pexels.com/photos/362875/pexels-photo-362875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 	background-color:black;
 	background-attachment: fixed;
+	background-size: cover;
 	height:100vh;
-	background-position: center; 
 	background-attachment: fixed;
 	z-index:-5;
-	h1{
-	  font-size:2rem;
-	}
-	@media (min-width: 768px) {
-	  h1{font-size:2.5rem;}
-	}
-	.hero{
+	.banner-text{
 	  text-align: center;
 	  position: absolute;
-	  color: white;
-	  &-text{
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -40%);
-		h1{
-		  margin-bottom:2rem;
-		  font-size:50px;
-			}
-			p{
-				margin-top:-2rem;
-			}
-	  }
-	  &-buttons{
-		a{
-		  width:100%;
-			display:inline-block;
-			margin:2% 0;
-			@media (min-width: 768px) {
-				width:45%;
-			}
-		}
-		width:50%;
-		bottom: 20%;
-		left: 50%;
-		transform: translate(-50%, -20%);
-		@media (min-width: 768px) {
-		  bottom: 35%;
-		  left: 50%;
-		  transform: translate(-50%, -35%);
-		}
-	  }
+		color: black;
+		font-weight:bold;
+		top:40%;
+		left:65%;
+		transform:translate(-65%, -40%);
 	}
-  }
+}
   .single-text-box{
 	padding:5% 10%;
 	@media (min-width: 768px) {
@@ -313,9 +280,9 @@ body{
 		cursor:pointer;
 		border: 2px solid $orange;
 		color: $orange;
-		display: block;
+
 		font-size:16px;
-		padding:12px 0;
+		padding:12px 40px;
 		font-weight: bold;
 		position: relative;
 		text-transform: uppercase;
