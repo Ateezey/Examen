@@ -21,7 +21,7 @@ function smoothScroll() {// Function to smooth all anchors
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 550, function () {
+      }, 700, function () {
         window.location.hash = hash;
       });
     }
