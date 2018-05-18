@@ -173,6 +173,9 @@ body {
     -webkit-transform: translate(-65%, -40%);
     -ms-transform: translate(-65%, -40%);
     transform: translate(-65%, -40%); }
+    @media (min-width: 768px) {
+      .banner .banner-text {
+        font-size: 18px; } }
 
 .single-text-box {
   padding: 5% 10%; }

@@ -178,8 +178,12 @@ body{
 		top:40%;
 		left:65%;
 		transform:translate(-65%, -40%);
+		@media (min-width: 768px) {
+			font-size:18px;
+		}
 	}
 }
+
   .single-text-box{
 	padding:5% 10%;
 	@media (min-width: 768px) {

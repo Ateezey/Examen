@@ -77,7 +77,7 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
                 </div>
         </div>
 
-        <div class="row justify-content-center location-images">
+        <div class="row justify-content-center location-images nopadding">
             <div class="col-lg-6 img-box nopadding">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kistam%C3%A4ssan_okt_2014.jpg/1200px-Kistam%C3%A4ssan_okt_2014.jpg">
             </div>
