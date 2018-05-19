@@ -39,16 +39,26 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> id: ". $row["id"]. " - Name: ". $row["name"]. " " . $row["lastname"] . " - Email: " . $row["email"] . "<br>";
+        echo "<div class="blablabla"><br> id: ". $row["id"]. " - Name: ". $row["name"]. " " . $row["lastname"] . " - Email: " . $row["email"] . "<br></div>";
     }
 } else {
     echo "0 results";
 }
-$sql="SELECT count(id) AS total FROM register";
+
+$conn->close();
+?> 
+
+
+<?php
+	$servername="localhost";
+	$username="root";
+	$password="";
+	$dbname="examendb";
+	$con=mysqli_connect($servername,$username,$password,$dbname);
+
+	$sql="SELECT count(id) AS total FROM register";
 	$result=mysqli_query($con,$sql);
 	$values=mysqli_fetch_assoc($result);
 	$num_rows=$values['total'];
 	echo "Antal registrerade till eventet: <br>". $num_rows;
-$conn->close();
-?> 
-
+?>
