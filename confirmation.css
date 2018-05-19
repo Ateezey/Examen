@@ -14,15 +14,9 @@
   height: auto;
   max-height: 300px; }
 
-.img-box-register {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
+.img-box-register img {
   width: 100%;
-  min-height: 400px;
-  padding-top: 10px;
-  background-position: 50%;
-  background-size: cover; }
+  height: auto; }
 
 .go-back-button {
   padding: 7% 0;
