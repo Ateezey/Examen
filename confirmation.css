@@ -14,6 +14,23 @@
   height: auto;
   max-height: 300px; }
 
+.icon-wrap {
+  display: inline-block;
+  width: 48px;
+  cursor: pointer;
+  height: 48px;
+  line-height: 48px;
+  padding-top: 4px;
+  background: #292425;
+  border: 1px solid #ff4e50;
+  color: #ff4e50;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s; }
+  .icon-wrap:hover {
+    background: #ff4e50;
+    color: #292425; }
+
 .img-box-register img {
   width: 100%;
   height: auto; }
