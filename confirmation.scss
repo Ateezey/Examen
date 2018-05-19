@@ -38,7 +38,23 @@
    
   }
    
-  
+  .icon-wrap{
+    display: inline-block;
+    width: 48px;
+    cursor:pointer;
+      height: 48px;
+    line-height: 48px;
+    padding-top:4px;
+    background:$darkgray;
+    border:1px solid $orange;
+    color:$orange;
+    transition:0.25s;
+    &:hover{
+      background:$orange;
+      color:$darkgray;
+    }
+    
+    }		
   .img-box-register{
     img{
       width:100%;
