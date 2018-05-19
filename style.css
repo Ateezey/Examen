@@ -103,6 +103,7 @@ body {
   .avatar img {
     width: 100%;
     height: auto;
+    min-height: 225px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: 0.25s;
