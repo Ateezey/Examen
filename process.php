@@ -21,7 +21,7 @@
 		echo "Failed to login";
 	}
 ?>
-
+<div class="blablabla">
 <?php
 $servername = "localhost";
 $username = "root";
@@ -43,10 +43,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 		
 		echo "
-		<table><br> 
+		<br> 
 			Name: ". $row["name"]. " " . $row["lastname"] . " - 
 			Email: " . $row["email"] . "
-		<br></table>"
+		<br>"
 		;
 		
     }
@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?> 
-
+</div>
 
 <?php
 	$servername="localhost";
