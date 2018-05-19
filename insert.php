@@ -67,7 +67,7 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-                <div class="col-lg-6 text-center register-valid">
+                <div class="col-md-6 text-center register-valid">
                     <i class="fas fa-check"></i>
                     <h1 class="header-space" >Tack</h1>
                     <p>Du är nu regitrerad till evenemanget!</p>
@@ -76,15 +76,14 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
                     <p>Datum: 25/5/2018</p>   
                 </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3 img-box">
+          <img src="https://images.pexels.com/photos/834949/pexels-photo-834949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+          </div>
+          </div>
 
-        <div class="row justify-content-center location-images nopadding">
-            <div class="col-lg-6 img-box nopadding">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kistam%C3%A4ssan_okt_2014.jpg/1200px-Kistam%C3%A4ssan_okt_2014.jpg">
-            </div>
-            <div class="col-lg-6 img-box nopadding">
-                <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0956178e44084db0e4a725c8b1e370e9&auto=format&fit=crop&w=1350&q=80">
-            </div> 
-                <div class="col-lg-4 go-back-button">
+  <div class="row">
+                <div class="col-md-4 md-offset-4 go-back-button">
                     <a href="index.html">
                     <button class="header-space cta">Tillbaka till startsidan!</button>
                     </a>
