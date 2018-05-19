@@ -83,7 +83,7 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
           </div>
 
   <div class="row">
-                <div class="col-md-4 md-offset-4 go-back-button">
+                <div class="col-md-4 offset-md-4 go-back-button">
                     <a href="index.html">
                     <button class="header-space cta">Tillbaka till startsidan!</button>
                     </a>

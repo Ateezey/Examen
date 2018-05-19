@@ -1,4 +1,4 @@
-$(".test").load("content.txt #test");
+//$(".test").load("content.txt #test");
 smoothScroll();
 emailValidation();
 
