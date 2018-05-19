@@ -311,6 +311,11 @@ footer i {
 .panel-menu {
   padding: 5% 0; }
 
+.panel {
+  min-height: 400px; }
+  .panel p {
+    padding: 24px 10px; }
+
 .open-panel {
   color: white;
   background-color: #fd7942;

@@ -44,21 +44,11 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-
-$conn->close();
-?> 
-
-
-<?php
-	$servername="localhost";
-	$username="root";
-	$password="";
-	$dbname="examendb";
-	$con=mysqli_connect($servername,$username,$password,$dbname);
-
-	$sql="SELECT count(id) AS total FROM register";
+$sql="SELECT count(id) AS total FROM register";
 	$result=mysqli_query($con,$sql);
 	$values=mysqli_fetch_assoc($result);
 	$num_rows=$values['total'];
 	echo "Antal registrerade till eventet: <br>". $num_rows;
-?>
+$conn->close();
+?> 
+

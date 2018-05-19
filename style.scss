@@ -331,6 +331,12 @@ body{
 .panel-menu{
 	padding:5% 0;
 }
+.panel{
+	min-height:400px;
+	p{
+		padding:24px 10px;
+	}
+}
 .open-panel{
 	color:white;
 	background-color: $lightorange;
