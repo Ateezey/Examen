@@ -66,8 +66,8 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
 <?php if ($rnum==0) : ?> 
 
     <div class="container-fluid">
-        <div class="row justify-content-center">
-                <div class="col-md-6 text-center register-valid">
+        <div class="row">
+                <div class="col-md-6 offset-md-3 text-center register-valid">
                     <i class="fas fa-check"></i>
                     <h1 class="header-space" >Tack</h1>
                     <p>Du är nu regitrerad till evenemanget!</p>
@@ -77,19 +77,21 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
                 </div>
         </div>
         <div class="row">
-          <div class="col-md-6 offset-md-3 img-box">
+          <div class="col-md-6 offset-md-3 img-box-register">
           <img src="https://images.pexels.com/photos/834949/pexels-photo-834949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
           </div>
           </div>
 
-  <div class="row">
+          <div class="row">
                 <div class="col-md-4 offset-md-4 go-back-button">
                     <a href="index.html">
                     <button class="header-space cta">Tillbaka till startsidan!</button>
                     </a>
                 </div>       
         </div>
-    </div>
+   
+
+  
 
      <div class="full-width darkgray">
         <div class="container">
@@ -186,24 +188,30 @@ if (!empty($name) || !empty($lastname) || !empty($email)) {
         </div>
       </div>
       <footer>
-        <div class="container-fluid black">
-          <div class="row text-center">
-            <div class="col-lg-4 footer-section">
-              <h1>Google</h1>
-            </div>
-            <div class="col-lg-4 footer-section">
+    <div class="full-width black">
+      <div class="container black">
+        <div class="row text-center footer-section">
+          <div class="col-md-4 ">
+            <h1>Google</h1>
+          </div>
 
-            </div>
-            <div class="col-lg-4 footer-section">
+          <div class="col-md-4 offset-md-4">
+            <div class="icon-wrap">
               <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-google-plus-g"></i>
-
-
             </div>
+            <div class="icon-wrap">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icon-wrap">
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+
+
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
 
 <?php endif; ?>        
 
