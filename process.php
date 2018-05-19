@@ -40,9 +40,9 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-		echo"<table> ";
-		echo "<br> Name: ". $row["name"]. " " . $row["lastname"] . " - Email: " . $row["email"] . "<br>";
-		echo" </table> ";
+		
+		echo "<table><br> Name: ". $row["name"]. " " . $row["lastname"] . " - Email: " . $row["email"] . "<br></table>";
+		
     }
 } else {
     echo "0 results";
