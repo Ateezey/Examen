@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <?php 
 	$username = $_POST['user'];
 	$password = $_POST['pass'];
@@ -64,3 +65,5 @@ $conn->close();
 	$num_rows=$values['total'];
 	echo "Antal registrerade till eventet: <br>". $num_rows;
 ?>
+
+</html>
