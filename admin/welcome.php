@@ -88,7 +88,146 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
             </div>
         </div>
+
+<!doctype html>
+<html>
+
+<head>
+
+ <meta charset="utf-8" />
+ <title>Textadmin</title>
+
+<style>
+    
+    hr {
+        width 90%;
+    }
+    
+</style>
+
+
+</head>
+
+<body>
+
+<br />
+<br />
+
+<?php
+$db = mysqli_connect('localhost', 'root', '', 'examendb');
+mysqli_query($db, "SET NAMES utf8");
+if (!$db) {
+    die('Connect Error (' . mysqli_connect_errno() . ') '
+            . mysqli_connect_error());
+}
+?>
+
+<br />
+<br />
+
+<br />
+
+<p id='hero-content'>
+    <?php
+    if(isset($_POST['update01'])){ 
+        $parag01 = $_POST['paragraf01'];
+    $q = "UPDATE content SET header = '$parag01' WHERE ID = 1;";
+    mysqli_query($db, $q);
+    }
+    
+        $query = "SELECT * FROM content WHERE ID = 1";
+        $result = mysqli_query($db, $query);
+        $ord = mysqli_fetch_assoc($result);
+        echo 'header: ';
+        echo $ord['header'];  
+        echo "<br />
+            <p>Ändra:</p> 
+            <form method='post'>
+            <input type='text' name='paragraf01'></input>
+            <input type='submit' value='Skicka' name='update01'>
+            </form>";   
+    ?>
+</p>
+
+<br />
+
+<p id='hero-content'>
+    <?php
+    if(isset($_POST['update1'])){ 
+        $parag1 = $_POST['paragraf1'];
+    $q = "UPDATE content SET breadtext = '$parag1' WHERE ID = 1;";
+    mysqli_query($db, $q);
+    }
+    
+        $query = "SELECT * FROM content WHERE ID = 1";
+        $result = mysqli_query($db, $query);
+        $ord = mysqli_fetch_assoc($result);
+        echo 'breadtext: ';
+        echo $ord['breadtext'];  
+        echo "<br />
+            <p>Ändra:</p> 
+            <form method='post'>
+            <textarea rows='5' cols='50' name='paragraf1'></textarea>
+            <input type='submit' value='Skicka' name='update1'>
+            </form>";   
+    ?>
+</p>
+
+<br />
+
+<hr />
+
+<p id='section-content'>
+    <?php
+    if(isset($_POST['update02'])){ 
+        $parag02 = $_POST['paragraf02'];
+    $q = "UPDATE content SET header = '$parag02' WHERE ID = 2;";
+    mysqli_query($db, $q);
+    }
+    
+        $query = "SELECT * FROM content WHERE ID = 2";
+        $result = mysqli_query($db, $query);
+        $ord = mysqli_fetch_assoc($result);
+        echo 'header: ';
+        echo $ord['header'];  
+        echo "<br />
+            <p>Ändra:</p> 
+            <form method='post'>
+            <input type='text' name='paragraf02'></input>
+            <input type='submit' value='Skicka' name='update02'>
+            </form>";   
+    ?>
+</p>
+
+<br />
+
+<p id='section-content'>
+    <?php
+    if(isset($_POST['update2'])){ 
+        $parag2 = $_POST['paragraf2'];
+    $q = "UPDATE content SET breadtext = '$parag2' WHERE ID = 2;";
+    mysqli_query($db, $q);
+    }
+    
+        $query = "SELECT * FROM content WHERE ID = 2";
+        $result = mysqli_query($db, $query);
+        $ord = mysqli_fetch_assoc($result);
+        echo 'breadtext: ';
+        echo $ord['breadtext'];  
+        echo "<br />
+            <p>Ändra:</p> 
+            <form method='post'>
+            <textarea rows='5' cols='50' name='paragraf2'></textarea>
+            <input type='submit' value='Skicka' name='update2'>
+            </form>";   
+    ?>
+</p>
+
+
+</body>
+</html>
     </div>
+
     <p><a href="logout.php" class="btn btn-danger">Sign out</a></p>
 </body>
 </html>
