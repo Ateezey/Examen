@@ -175,10 +175,7 @@ if (!$db) {
             <i class="fas fa-utensils"></i>
            
         </div>
-        <div class="open-panel" panel="3">      
-            <i class="fas fa-lightbulb"></i>
-          
-        </div>
+
         <div class="open-panel" panel="4">       
             <i class="fas fa-gift"></i>
            
@@ -211,18 +208,7 @@ if (!$db) {
     </div>
   </div>
 
-  <div class="container">
-    <div class="row  text-center">
-      <div class="col-md-6 offset-md-3 panel--js panel panel3">        
-          <h1>Inspiration</h1>
-          <p>Är du en tekniknörd som oss? Då har du kommit till rätt plats! Vi vill hjälpa dig hitta inspiration när det kommer till ny teknik.
-            Under eventet så kommer vi presentera ny teknik, ha intressanta företag på plats som kan upplysa folk om hur dem har 
-            gått till väga med sin teknologi och samt ha stora,kära gäster i vårt sällskap som kommer i sin tur ha några föreläsningar! 
-            Kom in och låt oss inspirera dig!
-          </p><hr>
-      </div>
-    </div>
-  </div>
+
 
   <div class="container">
     <div class="row  text-center">
